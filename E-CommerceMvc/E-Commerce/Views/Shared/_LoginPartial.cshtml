@@ -1,6 +1,7 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+﻿@using E_Commerce.Areas.Identity.Data;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Application_User> SignInManager
+@inject UserManager<Application_User> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
